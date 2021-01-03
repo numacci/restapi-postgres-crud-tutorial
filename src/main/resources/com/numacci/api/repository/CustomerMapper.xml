@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.numacci.api.repository.CustomerMapper">
+  <insert id="insert" parameterType="com.numacci.api.dto.Customer">
+    INSERT INTO customer VALUES (
+      #{id, jdbcType=VARCHAR},
+      #{username, jdbcType=VARCHAR},
+      #{email, jdbcType=VARCHAR},
+      #{phoneNumber, jdbcType=VARCHAR},
+      #{postCode, jdbcType=VARCHAR}
+    )
+  </insert>
+<!--    <select id="selectAll" resultType="Customer">-->
+<!--        SELECT * FROM customer-->
+<!--    </select>-->
+</mapper>

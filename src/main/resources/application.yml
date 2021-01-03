@@ -1,0 +1,16 @@
+# Web
+server:
+  port: 8081
+  servlet:
+    context-path: /api
+# Datasource
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/app_db
+    username: appuser
+    password: appuser
+# MyBatis
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
