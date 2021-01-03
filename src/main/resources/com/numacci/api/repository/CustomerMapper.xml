@@ -10,7 +10,23 @@
       #{postCode, jdbcType=VARCHAR}
     )
   </insert>
-<!--    <select id="selectAll" resultType="Customer">-->
-<!--        SELECT * FROM customer-->
-<!--    </select>-->
+  <select id="selectAll" resultType="com.numacci.api.dto.Customer">
+    SELECT * FROM customer
+  </select>
+  <select id="select" resultType="com.numacci.api.dto.Customer">
+    SELECT * FROM customer
+    WHERE id = #{id, jdbcType=VARCHAR}
+  </select>
+  <update id="update" parameterType="com.numacci.api.dto.Customer">
+    UPDATE customer
+    SET username = #{username, jdbcType=VARCHAR},
+        email = #{email, jdbcType=VARCHAR},
+        phone_number = #{phoneNumber, jdbcType=VARCHAR},
+        post_code = #{postCode, jdbcType=VARCHAR}
+    WHERE id = #{id, jdbcType=VARCHAR}
+  </update>
+  <delete id="delete">
+    DELETE FROM customer
+    WHERE id = #{id, jdbcType=VARCHAR}
+  </delete>
 </mapper>
