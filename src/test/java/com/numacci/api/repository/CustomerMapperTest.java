@@ -2,6 +2,7 @@ package com.numacci.api.repository;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.numacci.api.config.DbConfig;
 import com.numacci.api.dto.Customer;
 import java.io.File;
 import java.util.List;
@@ -17,10 +18,12 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Import;
 import org.springframework.transaction.annotation.Transactional;
 
 @SpringBootTest
 @Transactional
+@Import(DbConfig.class)
 public class CustomerMapperTest {
 
   @Autowired
