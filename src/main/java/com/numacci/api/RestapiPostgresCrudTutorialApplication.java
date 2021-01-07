@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class RestapiPostgresCrudTutorialApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(RestapiPostgresCrudTutorialApplication.class, args);
-	}
-
+  public static void main(String[] args) {
+    SpringApplication.run(RestapiPostgresCrudTutorialApplication.class, args);
+  }
 }
