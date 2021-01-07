@@ -1,5 +1,7 @@
 # restapi-postgres-crud-tutorial
 
+This is a tutorial project using Spring Boot, PostgreSQL and MyBatis to build a RESTful web service. Please refer to [zenn.dev](https://zenn.dev/numacci/articles/202101_java_restapi-postgres) where the details of this repository explained.
+
 ### Prerequisites
 
 * Java Development Kit (JDK) 11
